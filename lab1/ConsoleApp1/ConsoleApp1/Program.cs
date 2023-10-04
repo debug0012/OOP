@@ -16,16 +16,29 @@ namespace ConsoleApplication1
 
             //Moving further to the Lab1 task1
             Console.WriteLine("Moving further to the Lab1 task1...");
+            Console.WriteLine("But before please enter random int number or string:");
 
             //But before we implement simple Read solution
             do
             {
                 int i = Console.Read();
-                if (i != -1)
+                if (i != -1)                      
                     Console.WriteLine("{0} {1}", (char)i, i); //Shows up entered values and their codes
                 else
-                    break;
+                    break;    
             } while (true);
+
+            Console.WriteLine("Then enter random text, enter END to stop this loop: ");
+
+            //And simple ReadLine String solution
+            do
+            {
+                string s = Console.ReadLine();
+                if (s != "END")
+                    Console.WriteLine("Returned string: " + s);
+                else
+                    break;
+            } while (true) ;
 
         }
     }
