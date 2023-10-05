@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using static System.Math;    //Import Math from Framework Class Library
 namespace ConsoleApplication1
 {
@@ -11,6 +11,29 @@ namespace ConsoleApplication1
 
             return result;
         }
+        static void SieveOfEratosphene(int n)
+        {
+            bool[] prime = new bool[n + 1];
+            for (int i = 0; i<=n; i++)
+            {
+                prime[i] = true;       // Fill prime numbers into array
+            }
+
+            for (int pr = 2;  pr*pr <= n; pr++)     // Going through Prime and Sqrt method
+            {
+                if (prime[pr] == true)                                                
+                {
+                    for (int i = pr*pr; i <= n; i += pr)   // Update Primes
+                        prime[i] = false;
+                }
+            }                                     //
+            for (int i = 2; i <= n; i++)
+            {
+                if (prime[i] == true)
+                    Console.Write(i + " "); // Print all prime numbers
+            }
+        }
+
         public static void Main()
         {
             string name;
@@ -26,11 +49,17 @@ namespace ConsoleApplication1
             double y = CalculateTask1(2, 4, 5);
             Console.WriteLine(y);
             Console.WriteLine("Moving further to the Lab1 task2...");
+
+            //code to go through all Eratosphene elements
+            int n = 30;
+            Console.WriteLine(
+                "Following are the prime numbers");
+            Console.WriteLine("smaller than or equal to " + n);
+            SieveOfEratosphene(n);
             Console.ReadKey();
-            
-            
+
+
 
         }
     }
 }
-   
