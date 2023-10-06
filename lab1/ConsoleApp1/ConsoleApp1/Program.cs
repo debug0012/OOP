@@ -33,7 +33,10 @@ namespace ConsoleApplication1
                     Console.Write(i + " "); // Print all prime numbers
             }
         }
-
+        static void CalcFtask3(double a, double b, double c)
+        {
+            double y = (2 * a - b - Sin(c)) / 5 + Abs(c);
+        };
         public static void Main()
         {
             string name;
@@ -48,6 +51,7 @@ namespace ConsoleApplication1
             Console.WriteLine("Moving further to the Lab1 task1...");
             double y = CalculateTask1(2, 4, 5);
             Console.WriteLine(y);
+
             Console.WriteLine("Moving further to the Lab1 task2...");
 
             //code to go through all Eratosphene elements
@@ -56,9 +60,9 @@ namespace ConsoleApplication1
                 "Following are the prime numbers");
             Console.WriteLine("smaller than or equal to " + n);
             SieveOfEratosphene(n);
+
+            Console.WriteLine("Moving further to the Lab1 task3...")
             Console.ReadKey();
-
-
 
         }
     }
