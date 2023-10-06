@@ -33,10 +33,12 @@ namespace ConsoleApplication1
                     Console.Write(i + " "); // Print all prime numbers
             }
         }
-        static void CalcFtask3(double a, double b, double c)
+        static double CalcFtask3(double a, double b, double c)
         {
             double y = (2 * a - b - Sin(c)) / 5 + Abs(c);
-        };
+            return y;
+        }
+        
         public static void Main()
         {
             string name;
@@ -53,7 +55,6 @@ namespace ConsoleApplication1
             Console.WriteLine(y);
 
             Console.WriteLine("Moving further to the Lab1 task2...");
-
             //code to go through all Eratosphene elements
             int n = 30;
             Console.WriteLine(
@@ -61,9 +62,29 @@ namespace ConsoleApplication1
             Console.WriteLine("smaller than or equal to " + n);
             SieveOfEratosphene(n);
 
-            Console.WriteLine("Moving further to the Lab1 task3...")
-            Console.ReadKey();
+            Console.WriteLine(" ");
+            Console.WriteLine("Moving further to the Lab1 task3...");
+            //f(t, -2s, 1.17) - f(2.2, t, s-t)
+            // s and t inp
+            Console.WriteLine("Enter s: ");
+            double s = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(s);
+            Console.WriteLine("Enter t: ");
+            double t = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(t);
 
+            //f(t, -2s, 1.17)
+            double y1 = CalcFtask3(t, (s * -2), 1.17);
+
+            //f(2.2, t, s-t)
+            double y2 = CalcFtask3(2.2, t, s - t);
+
+            Console.WriteLine("Y1 result: " + y1);
+            Console.WriteLine("Y2 result: " + y2);
+            Console.WriteLine("Y1 - Y2 diff: ");
+            double diff = y1 - y2;
+            Console.WriteLine(diff);
+            Console.ReadKey();
         }
     }
 }
