@@ -1,0 +1,14 @@
+D:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net6.0\Lab2Arrays.exe
+D:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net6.0\Lab2Arrays.deps.json
+D:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net6.0\Lab2Arrays.runtimeconfig.json
+D:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net6.0\Lab2Arrays.dll
+D:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net6.0\Lab2Arrays.pdb
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.GeneratedMSBuildEditorConfig.editorconfig
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.AssemblyInfoInputs.cache
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.AssemblyInfo.cs
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.csproj.CoreCompileInputs.cache
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.dll
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\refint\Lab2Arrays.dll
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.pdb
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\Lab2Arrays.genruntimeconfig.cache
+D:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net6.0\ref\Lab2Arrays.dll
