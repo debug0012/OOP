@@ -39,7 +39,6 @@ class Class2
 
         //In binary array that contains N number of elements
         // 1. Calculate sum of negative elements
-
         int[] arr1 = { -1, -2, -3, 4, 5, 6, -3, -5, -9, 2, 1 };  //declaring simple array
                                                                  // Will throw if the array is empty.
                                                                  // Requires two passes over the array. 
@@ -56,28 +55,26 @@ class Class2
        //new ArraySegment < int > ( arr1,minIndex, maxIndex) //,s  //for multiplying between max_value and min_value           
        //new ArraySegment < int > ( arr1,2, 3 )
        //};
-
-        var mySegmentsArray = new ArraySegment<int>[1] {//declaring array segment
-                // Declaring array segments step by stepoc
-                //new ArraySegment < int > ( arr1,0, arr1.Length) , //for SumNegArraySegments
-                new ArraySegment < int > ( arr1, maxIndex-1, minIndex-1) }; //,s  //for multiplying between max_value and min_value           
-                                                                            //new ArraySegment < int > ( arr1,2, 3 )
-
-
-
+        var mySegmentsArray1 = new ArraySegment<int>[0] {//declaring array segment
+                // Declaring array segments step by step
+                //new ArraySegment < int > ( arr1, maxIndex-1, minIndex-1) };  //for multiplying between max_value and min_value           
+                                                                  //new ArraySegment < int > ( arr1,2, 3 )
+        };
         Console.WriteLine("Array elements are: ");
-        for (int i = 0; i < arr1.Length; i++)
+        for (int i = 0; i < arr1.Length; i++) {
             Console.WriteLine(arr1[i] + " ");
+        };
+          
 
 
         Console.WriteLine(" Sum of chosen negative values is : \n " + SumNegArraySegments(mySegmentsArray));
         //Console.WriteLine("Min index: " + minIndex);
         //Console.WriteLine("Max index: " + maxIndex);
         //Console.WriteLine(" Multiplying all elements between min value and max value: \n " + MultMaxbetwMainArrayEl(mySegmentsArray));
-        Console.WriteLine("Введіть текст:");
+        Console.WriteLine("Enter text:");
         string inputText = Console.ReadLine();
         //inputText.
-        Console.WriteLine("Введіть текст для видалення:");
+        Console.WriteLine("Enter text for deletions:");
         string textToRemove = Console.ReadLine();
         //textToRemove.
 
