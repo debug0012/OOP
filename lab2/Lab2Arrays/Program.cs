@@ -48,6 +48,7 @@ class Class2
                                                                  //int maxIndex = Array.IndexOf(arr1, arr1.Max());        //for multiplying between min_value and max_value
                                                                  //int diff = minIndex - maxIndex;
 
+<<<<<<< HEAD
         var mySegmentsArray = new ArraySegment<int>[1] //declaring array segment
         {
             // Declaring array segments step by step
@@ -56,10 +57,19 @@ class Class2
                 //new ArraySegment < int > ( arr1,minIndex, maxIndex) //,s  //for multiplying between max_value and min_value           
                 //new ArraySegment < int > ( arr1,2, 3 )
            //};
+=======
+        var mySegmentsArray = new ArraySegment<int>[1] {//declaring array segment
+                // Declaring array segments step by stepoc
+                //new ArraySegment < int > ( arr1,0, arr1.Length) , //for SumNegArraySegments
+                new ArraySegment < int > ( arr1, maxIndex-1, minIndex-1) }; //,s  //for multiplying between max_value and min_value           
+                //new ArraySegment < int > ( arr1,2, 3 )
+           
+>>>>>>> a62731ad24263e6809df974910c71447de51f4c1
 
         Console.WriteLine("Array elements are: ");
         for (int i = 0; i < arr1.Length; i++)
             Console.WriteLine(arr1[i] + " ");
+<<<<<<< HEAD
         
         Console.WriteLine(" Sum of chosen negative values is : \n " + SumNegArraySegments(mySegmentsArray));
         //Console.WriteLine("Min index: " + minIndex);
@@ -72,13 +82,13 @@ class Class2
         string textToRemove = Console.ReadLine();
         //textToRemove.
 
+=======
+        }
+        //Console.WriteLine(" Sum of chosen negative values is : \n " + SumNegArraySegments(mySegmentsArray));
+        Console.WriteLine(" Multiplying all elements between min value and max value: \n " + MultMaxbetwMainArrayEl(mySegmentsArray));
+>>>>>>> a62731ad24263e6809df974910c71447de51f4c1
         Console.ReadLine();
-
     }
-
-
-
-
-}
+} 
 
 
