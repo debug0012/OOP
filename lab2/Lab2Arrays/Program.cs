@@ -1,12 +1,13 @@
-﻿using System;
+﻿using System; 
+using System.Linq;  //For min element and sorting
 using static System.Math;
-using System.Linq;           //For min element
+          //For min element
 class Class2
 {
 
      
      private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
-    {
+{
         int sum = 0;
         foreach (var s in value)
         {
@@ -31,11 +32,37 @@ class Class2
         }
         return mult;
     }
-    private static int SortSegmAscending(ArraySegment<int>[] value)
+    /*private static int SortSegmAscending(ArraySegment<int>[] value)
     {
-         return value.OrderBy(value.GetLength);
+        int sort = 0;
+        ;
+        return sort;
+    }*/
+    //private static int countRowsWithoutZero(<int>[] value) { }
+    private static void PrintArraySegment(ArraySegment<int>[] arrSeg) {
+        foreach (var s in arrSeg)
+        {
+            for (int i = s.Offset; i < s.Offset + s.Count; i++)
+            {
+                Console.WriteLine("   [{0}] : {1}", i, s.Array[i]);
+            }
+        }
+            
+        Console.WriteLine();
     }
-    private static int countRowsWithoutZero(int[] value) { }
+    private static void PrintArraySegmentAsc(ArraySegment<int>[] arrSeg)
+    {
+        foreach (var s in arrSeg.Order())
+        {
+            for (int i = s.Offset; i < s.Offset + s.Count; i++)
+            {
+                Console.WriteLine("   [{0}] : {1}", i, s.Array[i]);
+            }
+        }
+
+        Console.WriteLine();
+    }
+
     public static void Main()
     {
         Console.WriteLine("Hello, World!");
@@ -73,8 +100,14 @@ class Class2
         Console.WriteLine("Min index: " + minIndex);
         Console.WriteLine("Max index: " + maxIndex);
         Console.WriteLine(" Multiplying all elements between min value and max value: \n " + MultMaxbetwMainArrayEl(mySegmentsMult));
-        //Console.WriteLine(" Sorting all elements in ascending order: \n " + SortSegmAscending(mySegmentsMult));
-        myFirstSegments.Order();
+        //Console.WriteLine(" Sorting all elements in ascending order: \n " + SortSegmAscending(myFirstSegments));
+        Console.WriteLine("The first array segment (with all the array's elements) contains:");
+        PrintArraySegment(myFirstSegments);
+        Console.WriteLine("Sorted array segment: ");
+        PrintArraySegmentAsc(myFirstSegments);
+        //myFirstSegments.Order(PrintArraySegmentAsc);
+
+
         Console.WriteLine(" input NEXT to move to the next task: ");
         string inputText = Console.ReadLine();
         

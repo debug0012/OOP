@@ -1,0 +1,14 @@
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.GeneratedMSBuildEditorConfig.editorconfig
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.AssemblyInfoInputs.cache
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.AssemblyInfo.cs
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.csproj.CoreCompileInputs.cache
+E:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net7.0\Lab2Arrays.exe
+E:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net7.0\Lab2Arrays.deps.json
+E:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net7.0\Lab2Arrays.runtimeconfig.json
+E:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net7.0\Lab2Arrays.dll
+E:\WUNU\OOP\lab2\Lab2Arrays\bin\Debug\net7.0\Lab2Arrays.pdb
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.dll
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\refint\Lab2Arrays.dll
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.pdb
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\Lab2Arrays.genruntimeconfig.cache
+E:\WUNU\OOP\lab2\Lab2Arrays\obj\Debug\net7.0\ref\Lab2Arrays.dll
