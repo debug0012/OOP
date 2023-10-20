@@ -4,6 +4,7 @@ using System.Linq;           //For min element
 class Class2
 {
 
+     
      private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
     {
         int sum = 0;
@@ -20,7 +21,6 @@ class Class2
         }
         return sum;
     }
-
     private static int MultMaxbetwMainArrayEl(ArraySegment<int>[] value)    //for multiplying between min_value and max_value
     {
         int mult = 1;
@@ -31,6 +31,11 @@ class Class2
         }
         return mult;
     }
+    private static int SortSegmAscending(ArraySegment<int>[] value)
+    {
+         return value.OrderBy(value.GetLength);
+    }
+    private static int countRowsWithoutZero(int[] value) { }
     public static void Main()
     {
         Console.WriteLine("Hello, World!");
@@ -44,7 +49,7 @@ class Class2
                                                                  // Requires two passes over the array. 
 
         // Declaring array segments step by step
-        var mySegmentsNegSum = new ArraySegment<int>[1]
+        var myFirstSegments = new ArraySegment<int>[1]
         {
             new ArraySegment<int> (arr1, 0, arr1.Length)  //declaring array segment
         };
@@ -63,11 +68,13 @@ class Class2
         };**/
         Console.WriteLine("Array elements: " + string.Join(", ", arr1));
 
-        Console.WriteLine(" Sum of chosen negative values is : \n " + SumNegArraySegments(mySegmentsNegSum));
+        Console.WriteLine(" Sum of chosen negative values is : \n " + SumNegArraySegments(myFirstSegments));
         Console.WriteLine(" Going next to multiplication between min and max element: ");
         Console.WriteLine("Min index: " + minIndex);
         Console.WriteLine("Max index: " + maxIndex);
         Console.WriteLine(" Multiplying all elements between min value and max value: \n " + MultMaxbetwMainArrayEl(mySegmentsMult));
+        //Console.WriteLine(" Sorting all elements in ascending order: \n " + SortSegmAscending(mySegmentsMult));
+        myFirstSegments.Order();
         Console.WriteLine(" input NEXT to move to the next task: ");
         string inputText = Console.ReadLine();
         
@@ -91,7 +98,7 @@ class Class2
             Console.WriteLine();
         }
         Console.WriteLine("Number of rows not containing any zero values: "); 
-
+        
 
         Console.Read();
     }
