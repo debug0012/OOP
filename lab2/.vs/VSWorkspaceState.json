@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Lab2Arrays"
+    "\\Lab2Arrays",
+    "\\Lab2Arrays\\bin",
+    "\\Lab2Arrays\\bin\\Debug",
+    "\\Lab2Arrays\\bin\\Debug\\net7.0"
   ],
   "SelectedNode": "\\Lab2Arrays\\Program.cs",
   "PreviewInSolutionExplorer": false

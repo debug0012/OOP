@@ -7,7 +7,7 @@ class Class2
 {
 
      
-     private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
+    private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
 {
         int sum = 0;
         foreach (var s in value)
@@ -23,7 +23,7 @@ class Class2
         }
         return sum;
     }
-    private static int MultMaxbetwMainArrayEl(ArraySegment<int>[] value)    //for multiplying between min_value and max_value
+    private static int MultMaxbetwMainArrayEl(ArraySegment<int>[] value)    //for multiplying between min_value and max_value of Array segment
     {
         int mult = 1;
         foreach (var s in value)
@@ -36,10 +36,11 @@ class Class2
     /*private static int SortSegmAscending(ArraySegment<int>[] value)
     {
         int sort = 0;
-        ;
+        ;                                                                        //Experimental array ascending
         return sort;
     }*/
-    private static int countRowsWithoutZero(int[,] value) {
+    private static int countRowsWithoutZero(int[,] value)   //Number of rows not containing any zero values
+    { 
         int withourZeroRows = 4;
         for (int i = 0; i < value.GetLength(0); i++)
         {
@@ -48,29 +49,42 @@ class Class2
                 if (value[i,j] == 0) {
                     withourZeroRows = withourZeroRows - 1;
                 }
-                //value[i, j] = ran.Next(0, 15);
-                //Console.Write("{0}\t", rectMatrix[i, j]);
             }
             Console.WriteLine();
         }
         return withourZeroRows;
     }
-    private static int defMaxValueThatSpotsMoreThanOnce(int[,] value)
+    private static int defMaxValueThatSpotsMoreThanOnce(int[,] matrix)   //For max number that triggers in matrix more than once
     {
-        int defMaxValue = 0;
-        for (int i = 0; i < value.GetLength(0); i++)
+        int defMaxValue = matrix[0, 0];
+        int counter = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            for (int j = 0; j < value.GetLength(1); j++)
+            for (int j = 0; j < matrix.GetLength(1); j++)
             {
-                if (value[i,j] == Max)
-                //value[i, j] = ran.Next(0, 15);
-                //Console.Write("{0}\t", rectMatrix[i, j]);
+                int currentValue = matrix[i, j];
+                if (currentValue > defMaxValue)
+                {
+                    defMaxValue = currentValue;
+                    counter = 1;
+                } 
+                else if (currentValue == defMaxValue)
+                {
+                    counter++;
+                }
             }
-            Console.WriteLine();
         }
-        return defMaxValue;
+        if (counter > 1)
+        {
+            return counter;
+        }
+        else
+        {
+            return defMaxValue;
+        }
     }
-    private static void PrintArraySegment(ArraySegment<int>[] arrSeg) {
+    private static void PrintArraySegment(ArraySegment<int>[] arrSeg)   //For indexed arraySegment print
+    {
         foreach (var s in arrSeg)
         {
             for (int i = s.Offset; i < s.Offset + s.Count; i++)
@@ -81,7 +95,7 @@ class Class2
             
         Console.WriteLine();
     }
-    private static void PrintArraySegmentAsc(ArraySegment<int>[] arrSeg)
+    private static void PrintArraySegmentAsc(ArraySegment<int>[] arrSeg)   //For arraySegment ascending order (BETA)
     {
         foreach (var s in arrSeg.Order())
         {
@@ -92,6 +106,23 @@ class Class2
         }
 
         Console.WriteLine();
+    }
+
+    private static string OddWordOfStringCounter(string word)
+    {
+        string result;
+        //result = string.Concat(word.Where((c, i) => i % 2 != 0));
+        //return result
+
+        // build a list from the split
+        List<String> parts = new List<String>(word.Split({ ' ' }, strings));
+
+        // create another list selecting only the strings with an even length
+        /List<String> partsEven = parts.Where(s => (s.Length % 2) != 0).ToList();
+
+        // join the new list elements into a single string
+        //return String.Join(" ", partsEven);
+        return null;
     }
 
     public static void Main()
@@ -149,19 +180,26 @@ class Class2
         Console.WriteLine("Going next for task2 - rectangular matrix");
         Console.WriteLine("Here it is (2D Array): ");
         int[,] rectMatrix = new int[4, 4];
-        Random ran = new Random();
+        Random ran = new Random();                                //Fill by random method
         for (int i = 0; i < rectMatrix.GetLength(0);  i++) 
         {
             for (int j = 0; j < rectMatrix.GetLength(1); j++)
             {
-                rectMatrix[i, j] = ran.Next(0, 15);
+                rectMatrix[i, j] = ran.Next(0, 15);  //From 0 to 15
                 Console.Write("{0}\t", rectMatrix[i, j]);
             }
             Console.WriteLine();
         }
         Console.WriteLine("Number of rows not containing any zero values : \n " + countRowsWithoutZero(rectMatrix));
         //countRowsWithoutZero(rectMatrix);
-
+        Console.WriteLine("Max number that triggers in matrix more than once (trigger count or value itself): \n " + defMaxValueThatSpotsMoreThanOnce(rectMatrix));
+        Console.WriteLine(" input NEXT to move to the next task: ");
+        string inputText1 = Console.ReadLine();
+        Console.WriteLine("Going next for task3 - string operations");
+        Console.WriteLine("Please input an ordinary string sentence: ");
+        string inputTask3 = Console.ReadLine();     
+        Console.WriteLine("User entered input: \n " + inputTask3);
+        Console.WriteLine("Odd (uneven) word counter from the string above: \n " + OddWordOfStringCounter(inputTask3));
         Console.Read();
     }
 }
