@@ -1,6 +1,7 @@
 ﻿using System; 
 using System.Linq;  //For min element and sorting
 using static System.Math;
+//using Array;
           //For min element
 class Class2
 {
@@ -38,7 +39,22 @@ class Class2
         ;
         return sort;
     }*/
-    //private static int countRowsWithoutZero(<int>[] value) { }
+    private static int countRowsWithoutZero(int[,] value) {
+        int withourZeroRows = 4;
+        for (int i = 0; i < value.GetLength(0); i++)
+        {
+            for (int j = 0; j < value.GetLength(1); j++)
+            {
+                if (value[i,j] == 0) {
+                    withourZeroRows = withourZeroRows - 1;
+                }
+                //value[i, j] = ran.Next(0, 15);
+                //Console.Write("{0}\t", rectMatrix[i, j]);
+            }
+            Console.WriteLine();
+        }
+        return withourZeroRows;
+    }
     private static void PrintArraySegment(ArraySegment<int>[] arrSeg) {
         foreach (var s in arrSeg)
         {
@@ -103,11 +119,9 @@ class Class2
         //Console.WriteLine(" Sorting all elements in ascending order: \n " + SortSegmAscending(myFirstSegments));
         Console.WriteLine("The first array segment (with all the array's elements) contains:");
         PrintArraySegment(myFirstSegments);
-        Console.WriteLine("Sorted array segment: ");
-        PrintArraySegmentAsc(myFirstSegments);
-        //myFirstSegments.Order(PrintArraySegmentAsc);
-
-
+        Console.WriteLine("Sorted array segment in an ascending order: ");
+        Array.Sort(arr1);
+        PrintArraySegment(myFirstSegments);
         Console.WriteLine(" input NEXT to move to the next task: ");
         string inputText = Console.ReadLine();
         
@@ -130,8 +144,8 @@ class Class2
             }
             Console.WriteLine();
         }
-        Console.WriteLine("Number of rows not containing any zero values: "); 
-        
+        Console.WriteLine("Number of rows not containing any zero values : \n " + countRowsWithoutZero(rectMatrix));
+        //countRowsWithoutZero(rectMatrix);
 
         Console.Read();
     }
