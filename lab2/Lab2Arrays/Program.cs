@@ -55,6 +55,21 @@ class Class2
         }
         return withourZeroRows;
     }
+    private static int defMaxValueThatSpotsMoreThanOnce(int[,] value)
+    {
+        int defMaxValue = 0;
+        for (int i = 0; i < value.GetLength(0); i++)
+        {
+            for (int j = 0; j < value.GetLength(1); j++)
+            {
+                if (value[i,j] == Max)
+                //value[i, j] = ran.Next(0, 15);
+                //Console.Write("{0}\t", rectMatrix[i, j]);
+            }
+            Console.WriteLine();
+        }
+        return defMaxValue;
+    }
     private static void PrintArraySegment(ArraySegment<int>[] arrSeg) {
         foreach (var s in arrSeg)
         {
