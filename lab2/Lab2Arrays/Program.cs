@@ -4,7 +4,7 @@ using System.Linq;           //For min element
 class Class2
 {
 
-    private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
+     private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
     {
         int sum = 0;
         foreach (var s in value)
@@ -44,18 +44,25 @@ class Class2
                                                                  // Requires two passes over the array. 
 
         // Declaring array segments step by step
-        ArraySegment<int> mySegmentsNegSum = new ArraySegment<int>(arr1, 0, arr1.Length);//declaring array segment
+        var mySegmentsNegSum = new ArraySegment<int>[1]
+        {
+            new ArraySegment<int> (arr1, 0, arr1.Length)  //declaring array segment
+        };
 
         int minIndex = Array.IndexOf(arr1, arr1.Min());        //for multiplying between min_value and max_value
         int maxIndex = Array.IndexOf(arr1, arr1.Max());        //for multiplying between min_value and max_value
-        ArraySegment<int> mySegmentsMult = new ArraySegment<int>(arr1, maxIndex - 1, minIndex - 1);
-        
-        
-        Console.WriteLine("Array elements are: ");
+        var mySegmentsMult = new ArraySegment<int>[1]
+        {
+           new ArraySegment<int>(arr1, maxIndex - 1, minIndex - 1)
+        };
+
+
+        /**Console.WriteLine("Array elements are: ");
         for (int i = 0; i < arr1.Length; i++) {
             Console.WriteLine(arr1[i]);
-        };
-         
+        };**/
+        Console.WriteLine("Array elements: " + string.Join(", ", arr1));
+
         Console.WriteLine(" Sum of chosen negative values is : \n " + SumNegArraySegments(mySegmentsNegSum));
         Console.WriteLine(" Going next to multiplication between min and max element: ");
         Console.WriteLine("Min index: " + minIndex);
