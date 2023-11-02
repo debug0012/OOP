@@ -6,7 +6,7 @@ using static System.Math;
 class Class2
 {
 
-     
+    
     private static int SumNegArraySegments(ArraySegment<int>[] value)    //Method that calculates sum of negative elements of Array segment
 {
         int sum = 0;
@@ -108,17 +108,17 @@ class Class2
         Console.WriteLine();
     }
 
-    private static string OddWordOfStringCounter(string word)
+    private static string CounterUnevenWordOfString(string word)
     {
         string result;
         //result = string.Concat(word.Where((c, i) => i % 2 != 0));
         //return result
 
         // build a list from the split
-        List<String> parts = new List<String>(word.Split({ ' ' }, strings));
+        //List<String> parts = new List<String>(word.Split({ ' ' }, strings));
 
         // create another list selecting only the strings with an even length
-        /List<String> partsEven = parts.Where(s => (s.Length % 2) != 0).ToList();
+        //List<String> partsEven = parts.Where(s => (s.Length % 2) != 0).ToList();
 
         // join the new list elements into a single string
         //return String.Join(" ", partsEven);
@@ -199,7 +199,7 @@ class Class2
         Console.WriteLine("Please input an ordinary string sentence: ");
         string inputTask3 = Console.ReadLine();     
         Console.WriteLine("User entered input: \n " + inputTask3);
-        Console.WriteLine("Odd (uneven) word counter from the string above: \n " + OddWordOfStringCounter(inputTask3));
+        //Console.WriteLine("Odd (uneven) word counter from the string above: \n " + OddWordOfStringCounter(inputTask3));
         Console.Read();
     }
 }
