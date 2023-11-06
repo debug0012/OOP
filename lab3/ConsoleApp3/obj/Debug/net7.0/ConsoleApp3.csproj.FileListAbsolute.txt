@@ -1,0 +1,4 @@
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.GeneratedMSBuildEditorConfig.editorconfig
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.AssemblyInfoInputs.cache
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.AssemblyInfo.cs
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.csproj.CoreCompileInputs.cache
