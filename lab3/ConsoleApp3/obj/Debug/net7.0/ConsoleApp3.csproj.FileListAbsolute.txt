@@ -2,3 +2,13 @@ D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.GeneratedMSBuildEditor
 D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.AssemblyInfoInputs.cache
 D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.AssemblyInfo.cs
 D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.csproj.CoreCompileInputs.cache
+D:\WUNU\OOP\lab3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.exe
+D:\WUNU\OOP\lab3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.deps.json
+D:\WUNU\OOP\lab3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.runtimeconfig.json
+D:\WUNU\OOP\lab3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.dll
+D:\WUNU\OOP\lab3\ConsoleApp3\bin\Debug\net7.0\ConsoleApp3.pdb
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.dll
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\refint\ConsoleApp3.dll
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.pdb
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ConsoleApp3.genruntimeconfig.cache
+D:\WUNU\OOP\lab3\ConsoleApp3\obj\Debug\net7.0\ref\ConsoleApp3.dll
